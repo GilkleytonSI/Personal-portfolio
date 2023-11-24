@@ -493,6 +493,11 @@ footer .line-footer a{
         font-size: 30px;
     }
 
+    .topo-do-site .txt-topo-site p{
+        font-size: 20px;
+        text-align: justify;
+    }
+
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
@@ -511,6 +516,10 @@ footer .line-footer a{
         font-size: 34px;
         line-height: 35px;
         text-align: center;
+    }
+
+    .sobre .txt-sobre p{
+        font-size: 20px;
     }
 
     .btn-social{
