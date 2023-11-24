@@ -309,6 +309,12 @@ section.sobre .flex {
     transition: .2s;
 }
 
+.btn-social a button i{
+    text-decoration: none;
+    text-align: none;
+    color: #000;
+}
+
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
     padding: 80px 4%;
@@ -509,6 +515,12 @@ footer .line-footer a{
 
     .btn-social{
         text-align: center;
+    }
+
+    .btn-social a button i{ 
+        text-decoration: none;
+        text-align: none;
+        color: #000;  
     }
 
     .img-sobre img{
