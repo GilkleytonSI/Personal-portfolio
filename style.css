@@ -32,6 +32,18 @@ body {
     transition: .2s;
 }
 
+.btn-contato-ct button{
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px;
+    background-color: #007ced;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 h2.titulo {
     color: #fff;
     font-size: 38px;
@@ -478,6 +490,10 @@ footer .line-footer a{
         display: none;
     }
 
+    .btn-contato-ct button{
+        display: none;
+    }
+
     .btn-contato{
         display: flex;
     }
@@ -485,17 +501,7 @@ footer .line-footer a{
     .btn-contato button{
         font-size: 12px;
     }
-
-    .btn-contato a button i{
-        text-decoration: none;
-        text-align: none;
-        color: #000; 
-    }
-
-    .btn-contato a{
-        color: #000;
-    }
-
+    
     .btn-abrir-menu{
         display: block;
     }
