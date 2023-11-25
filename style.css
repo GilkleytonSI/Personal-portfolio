@@ -504,8 +504,11 @@ footer .line-footer a{
         display: flex;
     }
 
-    .btn-contato button a{
+    .btn-contato button{
         font-size: 13px;
+    }
+
+    .btn-contato button a{
         color: #000;
     }
 
