@@ -513,8 +513,10 @@ footer .line-footer a{
         width: 100%;
     }
 
-    .btn-contato button a i{
-        color: #000;
+    .btn-contato a button i{
+        text-decoration: none;
+        text-align: none;
+        color: #000; 
     }
 
     /* ESPECIALIDADES */
