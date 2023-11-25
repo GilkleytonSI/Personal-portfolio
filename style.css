@@ -492,6 +492,10 @@ footer .line-footer a{
         color: #000; 
     }
 
+    .btn-contato a{
+        color: #000;
+    }
+
     .btn-abrir-menu{
         display: block;
     }
