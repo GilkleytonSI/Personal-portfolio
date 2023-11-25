@@ -236,6 +236,10 @@ section.especialidades .flex {
     transition: .2s;
 }
 
+.especialidades .especialidades-box p{
+    font-size: 14px;
+}
+
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
@@ -470,9 +474,16 @@ footer .line-footer a{
     }
 
     /* CABEÇALHO */
-    .menu-desktop,
-    .btn-contato {
+    .menu-desktop{
         display: none;
+    }
+
+    .btn-contato{
+        display: flex;
+    }
+
+    .btn-contato button{
+        font-size: 12px;
     }
 
     .btn-abrir-menu{
@@ -494,8 +505,8 @@ footer .line-footer a{
     }
 
     .topo-do-site .txt-topo-site p{
-        font-size: 20px;
-        text-align: justify;
+        font-size: 18px;
+        /* text-align: justify; */
     }
 
     .topo-do-site .img-topo-site img {
@@ -505,6 +516,11 @@ footer .line-footer a{
     /* ESPECIALIDADES */
     section.especiliadades {
         padding: 40px 8%;
+    }
+
+    .especialidades .especialidades-box p{
+        font-size: 15px;
+        text-align: justify;  
     }
 
      /* SOBRE */
@@ -519,7 +535,8 @@ footer .line-footer a{
     }
 
     .sobre .txt-sobre p{
-        font-size: 20px;
+        font-size: 19px;
+        text-align: initial;
     }
 
     .btn-social{
