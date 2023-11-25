@@ -486,6 +486,12 @@ footer .line-footer a{
         font-size: 12px;
     }
 
+    .btn-contato a button i{
+        text-decoration: none;
+        text-align: none;
+        color: #000; 
+    }
+
     .btn-abrir-menu{
         display: block;
     }
@@ -513,12 +519,7 @@ footer .line-footer a{
         width: 100%;
     }
 
-    .btn-contato a button i{
-        text-decoration: none;
-        text-align: none;
-        color: #000; 
-    }
-
+    
     /* ESPECIALIDADES */
     section.especiliadades {
         padding: 40px 8%;
