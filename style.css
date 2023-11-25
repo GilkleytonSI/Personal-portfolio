@@ -20,7 +20,7 @@ body {
     display: flex;
 }
 
-.btn-contato button {
+/* .btn-contato button {
     padding: 5px 20px;
     font-size: 17px;
     font-weight: 600;
@@ -30,13 +30,13 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
-}
+} */
 
-.btn-contato a button i{
+/* .btn-contato a button i{
     text-decoration: none;
     text-align: none;
     color: #000;
-}
+} */
 
 .btn-contato-ct button{
     padding: 5px 20px;
@@ -500,22 +500,18 @@ footer .line-footer a{
         display: none;
     }
 
-    .btn-contato{
+    /* .btn-contato{
         display: flex;
-    }
+    } */
 
-    .btn-contato button{
+    /* .btn-contato button{
         font-size: 13px;
-    }
+    } */
 
-    .btn-contato button a{
-        color: #000;
-    }
-
-    .btn-contato a button i{
+    /* .btn-contato a button i{
         text-decoration: none;
         color: #000;
-    }
+    } */
 
     .btn-abrir-menu{
         display: block;
