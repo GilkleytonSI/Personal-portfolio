@@ -259,6 +259,17 @@ section.habilidades .flex {
     margin-top: 30px;
 }
 
+.skills h1{
+    text-align: center;
+}
+
+/* .skills h3{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 12px;
+} */
 
 .skills ul{
     list-style: none;
@@ -290,12 +301,12 @@ section.habilidades .flex {
 }
 
 .css{
-    width: 40%;
+    width: 60%;
     animation: css 3s;
 }
 
 .javascript{
-    width: 20%;
+    width: 50%;
     animation: javascript 3s;
 }
 
@@ -317,7 +328,7 @@ section.habilidades .flex {
         width: 0%;
     }
     100%{
-        width: 40%;
+        width: 60%;
     }
 }
 @keyframes javascript {
@@ -325,7 +336,7 @@ section.habilidades .flex {
         width: 0%;
     }
     100%{
-        width: 20%;
+        width: 50%;
     }
 }
 
@@ -663,7 +674,7 @@ footer .line-footer a{
     .skills{
         width: 100%;
     }
-    
+
      /* SOBRE */
      section.sobre {
         padding: 80px 8%;
