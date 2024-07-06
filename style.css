@@ -299,6 +299,11 @@ section.habilidades .flex {
     animation: javascript 3s;
 }
 
+.git{
+    width: 70%;
+    animation: git 3s;
+}
+
 @keyframes html {
     0%{
         width: 0%;
@@ -321,6 +326,15 @@ section.habilidades .flex {
     }
     100%{
         width: 20%;
+    }
+}
+
+@keyframes git {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
     }
 }
 
@@ -647,13 +661,9 @@ footer .line-footer a{
     }
 
     .skills{
-        width: 300px;
-        justify-content: center;
-        padding: 20px;
-        margin: 0;
-        margin-top: 10px;
+        width: 100%;
     }
-
+    
      /* SOBRE */
      section.sobre {
         padding: 80px 8%;
