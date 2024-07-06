@@ -12,7 +12,7 @@ body {
 }
 
 .interface {
-    max-width: 1280px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -237,42 +237,137 @@ section.topo-do-site .flex {
     }
 }
 
-/* ESTILO DAS ESPECIALIDADES */
-section.especialidades {
+/* ESTILO DAS HABILIDADES */
+section.habilidades {
     padding: 40px 4%;
 }
 
-section.especialidades .flex {
+
+section.habilidades .flex {
     gap: 60px;
+    justify-content: center;
 }
 
-.especialidades .especialidades-box {
-    color: #fff;
+/* ESTILO DAS HABILIDADES - FRONT-END */
+
+.skills{
+    width: 400px;
     padding: 40px;
     border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-}
-
-.especialidades .especialidades-box p{
-    font-size: 14px;
-}
-
-.especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff78;
-}
-
-.especialidades-box i {
-    font-size: 70px;
-    color: #007ced;
+    background-color: #c2c2c2;
+    box-shadow: 0 15px 20px #00000027;
+    margin-top: 30px;
 }
 
 
-.especialidades .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
+.skills ul{
+    list-style: none;
 }
+
+.skills ul li{
+   margin: 20px 0;
+}
+
+.skills .barras{
+    background-color: #ccc;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right, #007aed9d, #1000ed);
+    position: absolute;
+} 
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 40%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 20%;
+    animation: javascript 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+/* ESTILO DAS HABILIDADES - BACK-END */
+
+.php{
+    width: 50%;
+    animation: php 3s;
+}
+
+.mysql{
+    width: 60%;
+    animation: mysql 3s;
+}
+
+.nodejs{
+    width: 20%;
+    animation: nodejs 3s;
+}
+
+@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes mysql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes nodejs {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+
+
 
 /* ESTILO DO SOBRE */
 section.sobre {
@@ -541,14 +636,22 @@ footer .line-footer a{
     }
 
     
-    /* ESPECIALIDADES */
-    section.especiliadades {
+    /* HABILIDADES */
+    section.habilidades {
         padding: 40px 8%;
     }
 
-    .especialidades .especialidades-box p{
-        font-size: 15px;
-        text-align: justify;  
+    .habilidades .habilidades-box h3{
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .skills{
+        width: 300px;
+        justify-content: center;
+        padding: 20px;
+        margin: 0;
+        margin-top: 10px;
     }
 
      /* SOBRE */
