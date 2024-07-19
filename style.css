@@ -484,7 +484,7 @@ section.sobre .flex {
 
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
-    padding: 80px 4%;
+    padding: 60px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
@@ -514,7 +514,7 @@ section.portfolio .flex {
 
 .projeto i{
     margin-right: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .projeto .btn {
