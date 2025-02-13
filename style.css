@@ -1,0 +1,916 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* .btn-contato button {
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px;
+    background-color: #007ced;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+} */
+
+/* .btn-contato a button i{
+    text-decoration: none;
+    text-align: none;
+    color: #000;
+} */
+
+.btn-contato-ct button{
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px;
+    background-color: #007ced;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #007ced;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #007ced;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+.interface .logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface .logo i{
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO MENU MOBILE */
+
+.btn-abrir-menu{
+    display: none;
+}
+
+.btn-abrir-menu i{
+    color: #007ced;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #007ced;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}   
+
+.menu-mobile nav ul li a:hover{
+    background-color: #007ced;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #007ced;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .img-sobre img{
+    border-radius: 18%;
+    transition: .2s;
+}
+
+.sobre .img-sobre img:hover{
+    transform: scale(1.05);
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #007ced;
+    display: block;
+}
+
+.sobre .txt-sobre h5{
+    color: #007ced;
+    font-size: 20px;
+
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #007ced;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social a button i{
+    text-decoration: none;
+    text-align: none;
+    color: #000;
+}
+
+/* ESTILO DO PORTFÓLIO */
+section.projetos{
+    /* background-color: #222; */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center;
+    padding: 10px; /* Espaçamento interno do container */
+}
+
+.portfolio {
+    flex: 1 1 calc(33.333% - 40px); /* Inclui o gap no cálculo da largura */
+    max-width: calc(33.333% - 40px); /* Espaço ajustado */
+    background-color: #fff;
+    padding: 15px; /* Adiciona espaço interno ao item */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, flex 0.3s ease;
+}
+
+.portfolio:hover {
+    transform: scale(1.05);
+}
+
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Animação suave ao redimensionar */
+}
+
+.portfolio h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.projetos-social-links {
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.projetos-social-links a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+
+.projetos-social-links a:hover {
+    color: #007ced;
+}
+
+.icon-tailwind {
+    transition: fill 0.3s ease-in-out;
+}
+
+.icon-tailwind:hover .tailwind-path {
+    fill: #005bb5;
+}
+
+
+
+/* Estilos para os ícones das tecnologias */
+.tecnologias {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 10px; /* Espaçamento entre os ícones */
+    margin-bottom: 15px; /* Espaçamento abaixo dos ícones */
+}
+
+.tecnologias i {
+    font-size: 1.8rem; /* Tamanho dos ícones */
+    color: #000; /* Cor dos ícones */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.tecnologias i:hover {
+    color: #005bb5; /* Cor ao passar o mouse */
+}
+
+
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .portfolio {
+        flex: 1 1 calc(45% - 30px); /* Ajusta para 2 itens por linha */
+        max-width: calc(45% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        flex: 1 1 calc(90% - 20px); /* Ajusta para 1 item por linha com margem */
+        max-width: calc(90% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio {
+        flex: 1 1 calc(100% - 10px); /* Garante espaçamento mesmo em telas pequenas */
+        max-width: calc(100% - 10px);
+    }
+}
+
+
+/* ESTILO DAS HABILIDADES */
+section.habilidades {
+    padding: 40px 4%;
+}
+
+
+section.habilidades .flex {
+    gap: 60px;
+    justify-content: center;
+}
+
+/* ESTILO DAS HABILIDADES - FRONT-END */
+
+.skills{
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #c2c2c2;
+    box-shadow: 0 15px 20px #00000027;
+    margin-top: 30px;
+}
+
+.skills h1{
+    text-align: center;
+}
+
+/* .skills h3{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 12px;
+} */
+
+.skills ul{
+    list-style: none;
+}
+
+.skills ul li{
+   margin: 20px 0;
+   font-weight: 600;
+}
+
+.skills li i{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.skills li img{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.skills .barras{
+    background-color: #ccc;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right, #007aed9d, #1000ed);
+    position: absolute;
+} 
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 60%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+
+.git{
+    width: 70%;
+    animation: git 3s;
+}
+
+.tailwind{
+    width: 50%;
+    animation: tailwind 3s; 
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes git {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes tailwind {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+/* ESTILO DAS HABILIDADES - BACK-END */
+
+.php{
+    width: 50%;
+    animation: php 3s;
+}
+
+.mysql{
+    width: 60%;
+    animation: mysql 3s;
+}
+
+.nodejs{
+    width: 20%;
+    animation: nodejs 3s;
+}
+
+@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes mysql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes nodejs {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+
+/* Estilos para a Seção de Certificados */
+section.certificados {
+    padding: 80px 4%;
+    background-color: #222;
+}
+
+.certificados .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.certificado {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.certificado:hover {
+    transform: scale(1.05);
+}
+
+.certificado img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certificado h3 {
+    text-align: center;
+    color: #007ced;
+    margin-bottom: 10px;
+}
+
+.certificado p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.certificado-links {
+    text-align: center;
+}
+
+.certificado-links a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.certificado-links a:hover {
+    color: #007ced;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .certificado {
+        flex: 1 1 calc(45% - 30px);
+        max-width: calc(45% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certificado {
+        flex: 1 1 calc(90% - 20px);
+        max-width: calc(90% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certificado {
+        flex: 1 1 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
+
+    .certificado img {
+        width: 80%; /* Reduz o tamanho da imagem para melhorar a visualização */
+    }
+
+    .certificado h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho do título */
+    }
+
+    .certificado p {
+        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    }
+
+    .certificado-links a {
+        font-size: 1.2rem; /* Ajusta o tamanho dos ícones */
+    }
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #007ced;
+}
+
+footer .line-footer p i {
+    color: #007ced;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .line-footer a{
+    color: #fff;
+    margin: 5px;
+}
+
+
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop{
+        display: none;
+    }
+
+    .btn-contato-ct button{
+        display: none;
+    }
+
+    /* .btn-contato{
+        display: flex;
+    } */
+
+    /* .btn-contato button{
+        font-size: 13px;
+    } */
+
+    /* .btn-contato a button i{
+        text-decoration: none;
+        color: #000;
+    } */
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .txt-topo-site p{
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 50% auto;
+    }
+
+
+    /* HABILIDADES */
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    .habilidades .habilidades-box h3{
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .skills{
+        width: 100%;
+    }
+
+     /* SOBRE */
+     section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre p{
+        font-size: 19px;
+        text-align: justify;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .btn-social a button i{ 
+        text-decoration: none;
+        text-align: none;
+        color: #000;  
+    }
+
+    .img-sobre img{
+        width: 60% auto;
+    }
+
+
+     /* RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    footer .line-footer p i{
+        font-size: 15px;
+    }
+    
+    footer .line-footer p a{
+        font-size: 17px;
+    }
+}
+
+
+
+/* Estilos para a Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1000; /* Fica acima de tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+}
+
+.modal-content {
+    margin: 5% auto; /* Centraliza a modal */
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #007ced;
+}

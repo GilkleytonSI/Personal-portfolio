@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FIM GOOGLE FONTES --> 
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- /Bootstrap icons -->
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="js/menu.js" defer></script>
+    <!-- FIM BOOTSTRAP ICONS -->
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <i class="fa-solid fa-g"></i>
+                <div class="logo-text"></div> 
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#certificados">Certificados</a></li>      
+                </ul>
+            </nav>
+
+            <!-- <div class="btn-contato-ct">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>btn-contato -->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>  
+                        <li><a href="#certificados">Certificados</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>CONSTRUINDO O DIGITAL A PARTIR DE IDEIAS<span>.</span></h1>
+                        <p>Criatividade e inovação são aliadas indispensáveis. Com uma abordagem singular que integra 
+                            design impactante, funcionalidade intuitiva e otimização para resultados, estou preparado 
+                            para dar vida à presença online dos seus sonhos.</p>
+
+                        <div class="btn-social">
+                            <a href="#sobre">
+                                <button><i class="fas fa-user"></i></button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/photo-perfil.jpg" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.jpg" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, 
+                            <span>SOU GILKLEYTON RODRIGUES.</span></h2>
+                            <h5><span class="input"></span></h5>
+                        <p>Sou apaixonado pelo mundo da tecnologia e estou em busca de se tornar um desenvolvedor de software Fullstack. Com minhas habilidades front-end e conhecimento em back-end, sou um profissional que busca constantemente a melhoria e o progresso, valorizando ainda mais meu perfil profissional. Sempre em busca de novos 
+                            desafios e oportunidades para crescer e aplicar meus conhecimentos na área de TI.</p>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/gilkleyton-rodrigues/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://wa.me/5581989646730?text=Ol%C3%A1%2C+gostaria+de+conhecer+seu+trabalho%3F" target="_blank"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+                            <a href="https://github.com/GilkleytonSI" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="projetos" id="projetos">
+            <div class="projetos-container">
+                <h2 class="titulo">Meus <span>PROJETOS.</span></h2>
+              <div class="galeria">
+
+                <div class="portfolio">
+                    <h3>Landing Page advocacia</h3>
+                    <img src="./images/projetos/landingpage-cliente.JPG" alt="Landing Page advocacia">
+                    <div class="tecnologias">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                    </div>
+                    <div class="projetos-social-links">
+                      <a href="https://gildersonadv.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                      <a href="#" class="expand-link" data-description="Site para Escritório de Advocacia - 
+                      Este projeto consiste no desenvolvimento de um site institucional para um escritório de advocacia, com o objetivo 
+                      de apresentar os serviços jurídicos oferecidos, destacar a experiência da equipe e facilitar o contato 
+                      com clientes em potencial." 
+                      data-img="./images/projetos/landingpage-cliente.JPG">
+                        <i class="fa-solid fa-expand"></i>
+                      </a>
+                      <a href="https://github.com/GilkleytonSI/LandingPage-advocacia" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio">
+                  <h3>App-cardapio</h3>
+                  <img src="./images/projetos/projeto-cardapio.JPG" alt="App-cardapio">
+                  <div class="tecnologias">
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS3"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <svg class="icon-tailwind" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                        <path class="tailwind-path" fill="#000" d="M12 6.4c-2.667 0-4.444 1.333-5.333 4 1.111-1.333 2.333-2 3.667-2 1.111 0 2 .556 2.778 1.667.667.889 1.556 1.333 2.667 1.333 2.667 0 4.444-1.333 5.333-4-1.111 1.333-2.333 2-3.667 2-1.111 0-2-.556-2.778-1.667C14 6.844 13.111 6.4 12 6.4Zm-5.333 7.2c-2.667 0-4.444 1.333-5.333 4 1.111-1.333 2.333-2 3.667-2 1.111 0 2 .556 2.778 1.667.667.889 1.556 1.333 2.667 1.333 2.667 0 4.444-1.333 5.333-4-1.111 1.333-2.333 2-3.667 2-1.111 0-2-.556-2.778-1.667C9 14.244 8.111 13.8 7 13.8Z"/>
+                    </svg>                                        
+                  </div>
+                  <div class="projetos-social-links">
+                      <a href="https://app-cardapio.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                      <a href="#" class="expand-link" data-description="O site do Gil Burguer foi desenvolvido 
+                      com o objetivo de proporcionar uma experiência de usuário agradável e funcional. Ele permite 
+                      que os clientes visualizem o cardápio, adicionem itens ao carrinho, e finalizem o pedido 
+                      diretamente pelo WhatsApp. O site é totalmente responsivo, garantindo uma boa experiência 
+                      em dispositivos móveis e desktops." 
+                      data-img="./images/projetos/projeto-cardapio.JPG">
+                        <i class="fa-solid fa-expand"></i>
+                      </a>
+                      <a href="https://github.com/GilkleytonSI/App-cardapio" target="_blank"><i class="fab fa-github"></i></a>
+                  </div>
+                </div>
+
+                <div class="portfolio">
+                    <h3>App-to-do-list</h3>
+                    <img src="./images/projetos/projeto-todolist.JPG" alt="App-to-do-list">
+                    <div class="tecnologias">
+                      <i class="fab fa-react" title="REACT"></i>
+                      <i class="fab fa-css3-alt" title="CSS3"></i>
+                      <i class="fab fa-node" title="nodejs"></i>                                        
+                    </div>
+                    <div class="projetos-social-links">
+                        <a href="https://desafio-to-do-list-delta.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="#" class="expand-link" data-description="O TodoList é uma aplicação 
+                        simples e intuitiva para gerenciamento de tarefas. Com uma interface amigável 
+                        e responsiva, permite aos usuários adicionarem, marcarem como concluídas e 
+                        removerem tarefas de forma prática." 
+                        data-img="./images/projetos/projeto-todolist.JPG">
+                          <i class="fa-solid fa-expand"></i>
+                        </a>
+                        <a href="https://github.com/GilkleytonSI/desafio-to-do-list.git" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </section>
+
+        <section class="habilidades" id="habilidades">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>HABILIDADES.</span></h2>
+                   <div class="flex">
+                        <div class="skills">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-html5"></i> HTML
+                                    <!-- <h3>HTML</h3> -->
+                                    <span class="barras"><span class="html"></span></span>
+                                </li>
+                                <li>
+                                    <i class="fab fa-css3-alt"></i> CSS
+                                    <!-- <h3>CSS</h3> -->
+                                    <span class="barras"><span class="css"></span></span>
+                                </li>
+                                <li>
+                                    <i class="fab fa-js"></i> JavaScript
+                                    <!-- <h3>JAVASCRIPT</h3> -->
+                                    <span class="barras"><span class="javascript"></span></span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-git-alt"></i> Git/Github
+                                    <!-- <h3>GIT/GITHUB</h3> -->
+                                    <span class="barras"><span class="git"></span></span>
+                                </li>
+                                <li>
+                                    <img src="images/icones/tailwind-css.png" alt=""> Tailwind CSS
+                                    <!-- <h3>Tailwind CSS</h3> -->
+                                    <span class="barras"><span class="tailwind"></span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="skills">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-php"></i> PHP
+                                    <!-- <h3>PHP</h3> -->
+                                    <span class="barras"><span class="php"></span></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-database"></i> MySQL
+                                    <!-- <h3>MySQL</h3> -->
+                                    <span class="barras"><span class="mysql"></span></span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-node-js"></i> Nodejs
+                                    <!-- <h3>NODE JS</h3> -->
+                                    <span class="barras"><span class="nodejs"></span></span>
+                                </li>
+                            </ul>
+                        </div>
+                   </div>               
+            </div><!--interface-->
+        </section><!--habilidades-->
+
+        <!-- Seção de Certificados -->
+        <section class="certificados" id="certificados">
+            <div class="interface">
+                <h2 class="titulo">Meus <span>CERTIFICADOS.</span></h2>
+                <div class="flex">
+
+                    <div class="certificado">
+                        <img src="images/certificados/HTML5eCSS3.jpg" alt="HTML & CSS3">
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Com essas habilidades em HTML5 e CSS3, posso criar e estilizar...</p>
+                        <div class="certificado-links">
+                            <a href="#" class="expand-link" data-description="Com essas habilidades em HTML5 e CSS3, posso criar e estilizar páginas da web 
+                            profissionalmente, seguindo as melhores práticas e padrões atuais. 
+                            Esse conhecimento é essencial para trabalhar como desenvolvedor web e 
+                            criar interfaces atraentes e responsivas para os usuários." 
+                            data-img="images/certificados/HTML5eCSS3.jpg">
+                                <i class="fa-solid fa-expand"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificado">
+                        <img src="images/certificados/Javascript.jpg" alt="JAVASCRIPT">
+                        <h3>JAVASCRIPT</h3>
+                        <p>Possuo conhecimentos em JavaScript...</p>
+                        <div class="certificado-links">
+                            <a href="#" class="expand-link" data-description="Possuo conhecimentos em JavaScript, 
+                            aplicando a linguagem para criar funcionalidades dinâmicas e interativas em sites. 
+                            Tenho experiência na manipulação de DOM, controle de eventos e requisições assíncronas 
+                            utilizando Promises e Async/Await para integrar APIs externas. Também sou capaz de trabalhar 
+                            com a modularização de código usando ES6 Modules, além de aplicar boas práticas de programação, 
+                            como o uso de funções reutilizáveis e a depuração de código com ferramentas de desenvolvedor. 
+                            Meu foco é criar interfaces de usuário otimizadas e responsivas, sempre visando a melhor 
+                            experiência para o usuário." 
+                            data-img="images/certificados/Javascript.jpg">
+                                <i class="fa-solid fa-expand"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificado">
+                        <img src="images/certificados/GitGitHub.jpg" alt="GIT/GITHUB">
+                        <h3>GIT/GITHUB</h3>
+                        <p>Com essas habilidades do Git/GitHub, posso...</p>
+                        <div class="certificado-links">
+                            <a href="#" class="expand-link" data-description="Com essas habilidades do Git/GitHub, posso 
+                            colaborar com eficiência em projetos de desenvolvimento de software, controlar versões 
+                            de código-fonte, gerenciar conflitos, contribuir para a comunidade de código aberto e 
+                            utilizar ferramentas e recursos do GitHub para melhorar a produtividade e a organização 
+                            do trabalho em equipe." 
+                            data-img="images/certificados/GitGitHub.jpg">
+                                <i class="fa-solid fa-expand"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificado">
+                        <img src="images/certificados/Firebase.jpg" alt="FIREBASE">
+                        <h3>FIREBASE</h3>
+                        <p>Aprendi a utilizar o Firebase...</p>
+                        <div class="certificado-links">
+                            <a href="#" class="expand-link" data-description="Aprendi a utilizar o Firebase para desenvolver 
+                            aplicações modernas e dinâmicas, integrando funcionalidades essenciais como autenticação de usuários 
+                            com e-mail, redes sociais e outros provedores. Adquiri conhecimentos sobre o uso do Realtime Database 
+                            e Firestore para armazenar e sincronizar dados em tempo real, além de gerenciar arquivos no Firebase 
+                            Storage. Sei configurar notificações push com o Firebase Cloud Messaging e hospedar aplicações de 
+                            forma simples no Firebase Hosting. Também aprendi a aplicar regras de segurança para proteger 
+                            dados e a utilizar ferramentas como Firebase Analytics e Crashlytics para monitorar o desempenho e a 
+                            estabilidade das aplicações." 
+                            data-img="images/certificados/Firebase.jpg">
+                                <i class="fa-solid fa-expand"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo">
+                        <i class="fa-solid fa-g"></i>
+                        <div class="logo-text"></div> 
+                     </div><!--logo-footer-->
+                     <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/gilkleyton-rodrigues/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://wa.me/5581989646730?text=Ol%C3%A1%2C+gostaria+de+conhecer+seu+trabalho%3F" target="_blank"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+                        <a href="https://github.com/GilkleytonSI" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gilkleyton.dev@gmail.com">gilkleyton.dev@gmail.com</a>
+                </p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Imagem do Projeto">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>
