@@ -240,6 +240,22 @@ section.topo-do-site .flex {
     }
 }
 
+@media (max-width: 466px) and (max-height: 679px) {
+    .img-topo-site img {
+        width: 80%;  /* Reduz a imagem para 80% do tamanho original */
+        max-width: 150px; /* Define um tamanho máximo menor */
+        height: auto; /* Mantém a proporção */
+    }
+}
+
+@media (max-width: 466px) {
+    .img-topo-site img {
+        width: 300vw; /* 60% da largura da tela */
+        max-width: 300px;
+    }
+}
+
+
 
 /* ESTILO DO SOBRE */
 section.sobre {
@@ -262,6 +278,21 @@ section.sobre .flex {
 
 .sobre .img-sobre img:hover{
     transform: scale(1.05);
+}
+
+@media (max-width: 466px) and (max-height: 679px) {
+    .img-sobre img {
+        width: 80%;  /* Reduz a imagem para 80% do tamanho original */
+        max-width: 150px; /* Define um tamanho máximo menor */
+        height: auto; /* Mantém a proporção */
+    }
+}
+
+@media (max-width: 466px) {
+    .img-sobre img {
+        width: 300vw; /* 60% da largura da tela */
+        max-width: 300px;
+    }
 }
 
 .sobre .txt-sobre h2 {
@@ -612,18 +643,22 @@ section.habilidades .flex {
 section.certificados {
     padding: 80px 4%;
     background-color: #222;
+    
 }
+
 
 .certificados .flex {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    justify-content: center; /* Centraliza os certificados */
+    gap: 20px; /* Espaço entre os certificados */
+    max-width: 1200px; /* Define um limite para evitar itens esticados demais */
+    margin: 0 auto; /* Centraliza o bloco na página */
 }
 
 .certificado {
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
+    flex: 1 1 calc(30% - 20px); /* Ajusta para no máximo 3 por linha */
+    max-width: calc(30% - 20px);
     background-color: #fff;
     padding: 15px;
     margin-top: 30px;
@@ -637,9 +672,10 @@ section.certificados {
 }
 
 .certificado img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a div */
+    height: auto; /* Mantém a proporção */
+    display: flex; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .certificado h3 {
