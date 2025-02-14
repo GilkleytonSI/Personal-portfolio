@@ -639,6 +639,11 @@ section.habilidades .flex {
     animation: nodejs 3s;
 }
 
+.firebase{
+    width: 50%;
+    animation: firebase 3s;
+}
+
 @keyframes php {
     0%{
         width: 0%;
@@ -661,6 +666,14 @@ section.habilidades .flex {
     }
     100%{
         width: 20%;
+    }
+}
+@keyframes firebase {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
     }
 }
 
