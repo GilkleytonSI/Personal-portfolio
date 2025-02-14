@@ -534,13 +534,18 @@ section.habilidades .flex {
 }
 
 .css{
-    width: 60%;
+    width: 80%;
     animation: css 3s;
 }
 
 .javascript{
-    width: 50%;
+    width: 75%;
     animation: javascript 3s;
+}
+
+.react{
+    width: 30%;
+    animation: react 3s;
 }
 
 .bootstrap{
@@ -571,7 +576,7 @@ section.habilidades .flex {
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 80%;
     }
 }
 @keyframes javascript {
@@ -579,7 +584,15 @@ section.habilidades .flex {
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 75%;
+    }
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
     }
 }
 @keyframes bootstrap {
