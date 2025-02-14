@@ -543,6 +543,11 @@ section.habilidades .flex {
     animation: javascript 3s;
 }
 
+.bootstrap{
+    width: 40%;
+    animation: bootstrap 3s;
+}
+
 .git{
     width: 70%;
     animation: git 3s;
@@ -575,6 +580,14 @@ section.habilidades .flex {
     }
     100%{
         width: 50%;
+    }
+}
+@keyframes bootstrap {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
     }
 }
 
