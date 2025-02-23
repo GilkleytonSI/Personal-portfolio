@@ -17,6 +17,8 @@
     <!-- /Bootstrap icons -->
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
@@ -27,6 +29,10 @@
 </head>
 
 <body>
+    <button id="btn-topo" title="Voltar ao Topo">
+        ⬆
+    </button>
+    
     <header>
         <div class="interface">
             <div class="logo">
@@ -43,6 +49,10 @@
                     <li><a href="#certificados">Certificados</a></li>      
                 </ul>
             </nav>
+
+            <!-- seletor de idioma ao menu -->
+            <div id="google_translate_element"></div>
+
 
             <!-- <div class="btn-contato-ct">
                 <a href="#contato">
@@ -79,8 +89,8 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>CONSTRUINDO O DIGITAL A PARTIR DE IDEIAS<span>.</span></h1>
-                        <p>Criatividade e inovação são aliadas indispensáveis. Com uma abordagem singular que integra 
+                        <h1 id="title">CONSTRUINDO O DIGITAL A PARTIR DE IDEIAS<span>.</span></h1>
+                        <p id="description">Criatividade e inovação são aliadas indispensáveis. Com uma abordagem singular que integra 
                             design impactante, funcionalidade intuitiva e otimização para resultados, estou preparado 
                             para dar vida à presença online dos seus sonhos.</p>
 
@@ -106,7 +116,7 @@
                     </div><!--img-sobre-->
 
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, 
+                        <h2 id="about">MUITO PRAZER, 
                             <span>SOU GILKLEYTON RODRIGUES.</span></h2>
                             <h5><span class="input"></span></h5>
                         <p>Sou apaixonado pelo mundo da tecnologia e estou em busca de se tornar um desenvolvedor de software Fullstack. Com minhas habilidades front-end e conhecimento em back-end, sou um profissional que busca constantemente a melhoria e o progresso, valorizando ainda mais meu perfil profissional. Sempre em busca de novos 
@@ -430,6 +440,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>
